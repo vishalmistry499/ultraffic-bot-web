@@ -22,14 +22,51 @@
 </head>
 <body>
 <section id="control" class="control">
-	<div class="container justify-content-center">
+	<div class="container d-flex align-items-center flex-column justify-content-center">
 		<div class="text-center"><h1>CONTROL CENTER</h1></div>
-			<div class="container" style="padding: 100px">
-				<nav class="nav nav-pills nav-justified">
-				  <a class="nav-item nav-link" href="#manual">Manual Mode</a>
-				  <a class="nav-item nav-link" href="#automatic">Automatic Mode</a>
-				</nav>
+		<div class="btn-group">
+		  <button type="button" class="btn btn-primary">Action</button>
+		  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    <span class="sr-only"></span>
+		  </button>
+		  <div class="dropdown-menu">
+		    <a class="dropdown-item" href="#">Action</a>
+		    <a class="dropdown-item" href="#">Another action</a>
+		    <a class="dropdown-item" href="#">Something else here</a>
+		    <div class="dropdown-divider"></div>
+		    <a class="dropdown-item" href="#">Separated link</a>
+		  </div>
+		</div>
+
+<div class="container" style="padding: 100px;height: 700px; width: 700px;">
+			<div class="row">
+				<div class="container horizontal ">
+					<div class="circle red" color="red"></div>
+					<div class="circle yellow" color="yellow"></div>
+					<div class="circle green" color="green"></div>
+				</div>
 			</div>
+			<div class="d-flex flex-row justify-content-around">
+				<div class="container vertical">
+					<div class="circle red" color="red"></div>
+					<div class="circle yellow" color="yellow"></div>
+					<div class="circle green" color="green"></div>
+				</div>
+				<div class="container vertical">
+					<div class="circle red" color="red"></div>
+					<div class="circle yellow" color="yellow"></div>
+					<div class="circle green" color="green"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container horizontal">
+					<div class="circle red" color="red"></div>
+					<div class="circle yellow" color="yellow"></div>
+					<div class="circle green" color="green"></div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 </section>
 </body>
