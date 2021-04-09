@@ -3,7 +3,7 @@
 <head>
    <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>My Profile</title>
+  <title>My Account</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -35,7 +35,7 @@
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
           <li class="dropdown"><a href="#"><span id="welcomeUser">Welcome</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="myaccount.html">My Account</a></li>
+              <li><a href="#">My Account</a></li>
               <li><a href="#">Log out</a></li>
             </ul>
           </li>
@@ -45,27 +45,34 @@
 
     </div>
   </header><!-- End Header -->
- <section id="myprofile" class="myprofile">
+ <section id="myaccount" class="contact">
   <div class="row justify-content-center" style="padding: 20px">
-    <h1 align="center">Assigned Position</h1>
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="myprofile">
+    <h1 align="center">My Account</h1>
+          <div class="d-flex align-items-around justify-content-center">
+            <div class="myaccount" style="width: 600px;">
+
+              <form class="php-email-form">  
               <div class="email">
-                <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>user@gmail.com</p>
+                <p id="loginmail">user@gmail.com</p>
               </div>
-              <div class="junction">
-                <i class="bi bi-align-middle"></i>
-                <h4>Junction:</h4>
-                <p>J1</p>
+              <div class="d-flex flex-row justify-content-between">
+              <div class="firstName">
+                <h4>First Name:</h4>
+                <input type="text" name="firstName" placeholder="peter">
               </div>
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Address:</h4>
-                <p>Sarvajanik College of Engg. & Tech, opp. Mission Hospital, Athwalines, Surat.</p>
+              <div class="lastName">
+                <h4>Last Name:</h4>
+                <input type="text" name="lastName" placeholder="parker">
               </div>
-              <iframe src="https://maps.google.com/?q=40.5509,-105.0668&output=svembed" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              </div>
+              <div class="contactmail">
+                <h4>Contact Email:</h4>
+                <input type="email" name="contactEmail" placeholder="abc@gmail.com">
+                <p style="font-size: 10pt">*This email we will use to contact you</p>
+              </div>
+              <button type="submit">Update Info.</button>
+              </form>
             </div>
           </div>
           </div>

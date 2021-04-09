@@ -35,7 +35,7 @@
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
           <li class="dropdown"><a href="#"><span id="welcomeUser">Welcome</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">My Account</a></li>
+              <li><a href="myaccount.html">My Account</a></li>
               <li><a href="#">Log out</a></li>
             </ul>
           </li>
@@ -50,7 +50,7 @@
 		<div class="text-center"><h1>CONTROL CENTER</h1></div>
 		<div class="text-center"><h1>Manual Mode</h1></div>
 
-<div class="container" style="padding: 100px;height: 650px; width: 650px;">
+<div class="container" style="padding: 80px; max-width: 650px;">
 			<div class="row">
 				<div class="container horizontal ">
 					<div class="circle red" color="red"></div>
@@ -78,7 +78,36 @@
 				</div>
 			</div>
 		</div>
-
+<div class="container col-md-6 d-flex flex-column justify-content-around align-items-start auto"  style="width: 50%;">
+        <div>
+        <h5>Junction: </h5>
+        <select class="form-control" name="junction" id="newJunction" style="margin-left: 20px; width: 100%" required>
+                    <option>Select Junction</option>
+                    <option>J1</option>
+                    <option>J2</option>
+                </select>
+                </div>
+                <br>
+                <div>
+                <h5>Address:</h5>
+                <p>Sarvajanik College of Engg. & Tech, opp. Mission Hospital, Athwalines, Surat.</p>
+                </div>
+                <br>
+                <div>
+                  <div>                 
+                    <label><h5>Green delay: </h5></label>
+                    <span class="text" style="padding: auto;" id="green">0</span>
+                  </div>   
+                  <div>                 
+                    <label><h5>Yellow delay: </h5></label>
+                    <span class="text" id="yellow">0</span>
+                  </div>
+                  <div>                 
+                    <label><h5>Red delay: </h5></label>
+                    <span class="text" id="red">0</span>
+                  </div>
+                </div>
+      </div>
 	</div>
 </section>
   <!-- ======= Footer ======= -->
